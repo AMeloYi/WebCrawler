@@ -27,6 +27,7 @@ while queue:
     except:
         continue
 
+    print(data)
     linkre = re.compile('href="(.+?)"')
     for x in linkre.findall(data):
         if 'http' in x and x not in visited:
